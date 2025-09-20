@@ -10,7 +10,7 @@ TestNG, @Test, Before and After Method.
 Cloud Grids - Selenoid Docker integration
 SonarLint, Java > 8
 Run Local and on Selenoid Integration
-![img.png](img.png)
+![img_3.png](img_3.png)
 
 mvn test -Dsurefire.suiteXmlFiles=testng.xml
 
