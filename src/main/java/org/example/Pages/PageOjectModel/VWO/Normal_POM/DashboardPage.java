@@ -1,6 +1,5 @@
-package org.example.Pages.PageOjectModel.VWO;
+package org.example.Pages.PageOjectModel.VWO.Normal_POM;
 
-import org.example.Utilis.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -19,7 +18,7 @@ public class DashboardPage{
     private By userNameOnDashboard = By.xpath("//h6");
     // Page Actions
     public String loggedInUserName() {
-//      WaitHelpers.visibilityOfElement(userNameOnDashboard);
+//  WaitHelpers.visibilityOfElement(userNameOnDashboard);
         driver.get("https://app.vwo.com/#/dashboard");
         return  driver.findElement(userNameOnDashboard).getText();
     }

@@ -10,8 +10,8 @@ import java.io.IOException;
 public class utilExcel {
 
 
-    // /Users/promode/IdeaProjects/LearningSeleniumATB13x == System.getProperty("user.dir")
-    public static String SHEET_PATH = System.getProperty("user.dir") + "/src/test/resources/TestData.xlsx";
+    // C:\Users\ashok\IdeaProjects\ATB13xSeleniumAdvancedFramework == System.getProperty("user.dir")
+    public static String SHEET_PATH = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData.xml";
     static Workbook book;
     static Sheet sheet;
 

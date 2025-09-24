@@ -2,8 +2,8 @@ package org.example.Test.VWO.PageObjectModel;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.example.Pages.PageOjectModel.VWO.DashboardPage;
-import org.example.Pages.PageOjectModel.VWO.LoginPage;
+import org.example.Pages.PageOjectModel.VWO.Normal_POM.DashboardPage;
+import org.example.Pages.PageOjectModel.VWO.Normal_POM.LoginPage;
 import org.example.Utilis.PropertiesReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

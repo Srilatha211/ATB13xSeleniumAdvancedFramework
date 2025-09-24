@@ -1,4 +1,4 @@
-package org.example.Pages.PageOjectModel.VWO;
+package org.example.Pages.PageOjectModel.VWO.Normal_POM;
 
 
 import org.example.Utilis.WaitHelpers;

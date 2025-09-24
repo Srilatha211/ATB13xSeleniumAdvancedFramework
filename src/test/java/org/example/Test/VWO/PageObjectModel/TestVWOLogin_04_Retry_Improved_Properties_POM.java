@@ -2,22 +2,24 @@ package org.example.Test.VWO.PageObjectModel;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.example.Base.CommonToAllTest;
-import org.example.Driver.DriverManager;
-import org.example.Pages.PageOjectModel.VWO.Normal_POM.DashboardPage;
-import org.example.Pages.PageOjectModel.VWO.Normal_POM.LoginPage;
-import org.example.Utilis.PropertiesReader;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.Base.CommonToAllTest;
+import org.example.Driver.DriverManager;
+import org.example.Listners.RetryAnalyser;
+import org.example.Pages.PageOjectModel.VWO.Improved_POM.DashboardPage;
+import org.example.Pages.PageOjectModel.VWO.Improved_POM.LoginPage;
+import org.example.Utilis.PropertiesReader;
+import org.example.Utilis.TakeScreenshots;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+@Test(retryAnalyzer = RetryAnalyser.class)
+public class TestVWOLogin_04_Retry_Improved_Properties_POM extends CommonToAllTest {
 
-public class TestVWOLogin_02_Properties_POM  extends CommonToAllTest {
 
-
-    private static final Logger logger = LogManager.getLogger(TestVWOLogin_02_Properties_POM.class);
+    private static final Logger logger = LogManager.getLogger(TestVWOLogin_04_Retry_Improved_Properties_POM.class);
 
     @Owner("Srilatha")
     @Description("Verify that with invalid email, pass, error message is shown on the app.vwo.com")    @Test
@@ -72,6 +74,8 @@ public class TestVWOLogin_02_Properties_POM  extends CommonToAllTest {
 
         assertThat(Username).isNotBlank().isNotNull().isNotEmpty();
         logger.info("Done the Test cases");
+       // new TakeScreenshots().takeScreenshot("testPass_1");
+
 
         Assert.assertEquals(Username,PropertiesReader.readKey("expected_username"));
 
